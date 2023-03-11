@@ -131,17 +131,19 @@ margin-bottom: 48px;
 .flex {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     gap: 24px;
     padding: 0;
     margin: 0;
     margin-bottom: 48px;
-    flex-basis: calc((396-1*24)/2);
+   width: calc((768-1*24)/2);
 }
   
 .icon-list-sec {
     display: none;}
+
+    .tabl-con{    display: flex;
+    flex-wrap: wrap;
+}
 
 /*=======Section 2=========*/
 

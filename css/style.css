@@ -460,7 +460,7 @@ transition-duration:  250ms;
 }
 
 .cover-text {
-    padding: 0;
+    padding: 40px 32px 164px 32px;
     margin: 0;
     position: absolute;
     top:0%;
@@ -501,7 +501,7 @@ transition: cubic-bezier(0.4, 0, 0.2, 1);
     top:45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 72px 24px;
+    padding: 72px 24px 24px 24px;
 
      
 }
@@ -564,7 +564,7 @@ text-align: center;
 letter-spacing: 0.02em;
  margin: 0;
   padding: 0;
-margin: 24px 0;}
+margin-bottom: 24px;}
    
 
 
@@ -653,7 +653,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 4px;
 height: 40px;
 width: 264px;
-padding: 8px 0px 8px 16px;}
+padding: 8px 0px 8px 16px;
+color: var(--main);}
+
 
 .subs {display:flex;
     margin:0;
@@ -664,13 +666,14 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;}
 
-.submit-footer{background-color: var(--ocean);
+.submit-footer{border-color: transparent;
     color: var(--main);
 display: flex;
 margin-left: auto;
 margin-right: auto;
 letter-spacing: 0.04em;
 background-color: var(--iris);
+
 border-radius: 4px;
 padding: 8px 24px;
 gap: 16px;}
@@ -916,8 +919,6 @@ transition-property: transform;
 .flex {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     gap: 24px;
     padding: 0;
     margin: 0;
@@ -927,3 +928,28 @@ transition-property: transform;
 
 
 /*======Portfolio cards======*/
+
+
+.contact-div {margin-bottom: 48px;}
+
+
+.mobile-menu{
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ background-color: var(--main);
+ z-index: 1000;
+ padding: 80px 40px 40px 40px ;
+
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: nones;
+ }
+
+ .mobile-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}

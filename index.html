@@ -36,7 +36,9 @@
             </nav>
 
 
-            <button type="button" class="mobile-menu-open" js-open-menu><svg class="mobile-menu-open-button" width="30" height="18.6">
+            <button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mobile-menu-open-button" width="30" height="18.6">
                 <use href="./image/social-defs.svg#icon-charm_menu-hamburger">
                 </use>
             </svg>
@@ -49,8 +51,8 @@
         </ul>
         </address> </div>
 
-      <div class="mobile-menu">
-        <button class="mobile-menu_close-bg" class="js-close-menu"><svg class="icon-close" width="8" height="8">
+      <div class="mobile-menu js-menu-container" id="mobile-menu" >
+        <button class="mobile-menu_close-bg js-close-menu" ><svg class="icon-close" width="8" height="8">
             <use href="./image/social-defs.svg#icon-close"></use>
         </svg></button>
 
@@ -102,7 +104,7 @@
         </section> 
         <!--Section 2-->
         <section class="flexbox">
-            <div class="container">
+            <div class="container tabl-con">
             <h2 class="visually-hidden">Theme</h2>
             <ul class="flex">
          <li class="hidden-dot"><div class='icon-list-sec'><svg class="icon-item">
@@ -370,8 +372,9 @@
 </form>
  
     </div> </div>
-    <script scr="./js/mobile-menu.js"></script>
+  
 <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

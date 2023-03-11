@@ -100,11 +100,25 @@ display: flex;}
     letter-spacing: 0.02em;
    
  }
- 
+
+        .burger-link:hover,
+        .burger-link:focus {
+            color: var(--active-color);
+            transform: scale(1);
+  animation: pulse 2s infinite;
+}
 
  .contact-list {text-decoration: none; list-style-type: none;}
- .contact {text-decoration: none;}
+ .contact {text-decoration: none;color: var(--slate);}
 
+
+        .contact:hover,
+        .contact:focus {
+            font-size: 36px;
+            color: var(--active-color);
+            transform: scale(1);
+  animation: pulse 2s infinite;
+}
 
     /*=========Hero==========*/
 
@@ -295,6 +309,10 @@ letter-spacing: 0.02em;}
  background-color: var(--main);
  z-index: 1000;
  padding: 80px 40px 40px 40px ;
+
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: nones;
  }
 
  .mobile-menu_close-bg { width: 24px;
@@ -311,9 +329,9 @@ border-radius: 50%;
    
 }
 .mobile-menu.is-open{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .soc-list-mob {    display: flex;
@@ -322,6 +340,9 @@ border-radius: 50%;
     margin: 0;
     margin-top: 8px;
     gap: 24px;}
+
+    .contact-div {margin-bottom: 48px;
+    }
  }
 
 

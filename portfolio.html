@@ -26,27 +26,67 @@
         <nav class="flex-header">
             <a class='header-title' href="./index.html"><span class="iris">WEB</span>STUDIO </a>
             <ul class="nav-link-list">
-
-
-                <li> <a class="nav-link " href="./index.html">Studio</a></li>
+    
+    
+               <li> <a class="nav-link" href="./index.html">Studio</a></li>
                 <li> <a class="nav-link current" href="./portfolio.html">Portfolio</a></li>
                 <li><a class="nav-link" href="">Contacts</a></li>
             </ul>
-        </nav>
-<button type="button" class="mobile-menu-open"><svg class="mobile-menu-open-button" width="30" height="18.6">
+            </nav>
+
+
+            <button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mobile-menu-open-button" width="30" height="18.6">
                 <use href="./image/social-defs.svg#icon-charm_menu-hamburger">
                 </use>
             </svg>
-
-            </button>
+             </button>
+        
         <address class="address">
             <ul class="contacts-list">
-                <li><a class="contacts" href=”mailto:info@devstudio.com”>info@devstudio.com</a></li>
-                <li><a class="contacts" href=”tel:+110001111111”>+11 (000) 111-11-11</a></li>
+            <li><a class="contacts" href=”mailto:info@devstudio.com”>info@devstudio.com</a></li>
+            <li><a  class="contacts" href=”tel:+110001111111”>+11 (000) 111-11-11</a></li>
+        </ul>
+        </address> </div>
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu" >
+        <button class="mobile-menu_close-bg js-close-menu" ><svg class="icon-close" width="8" height="8">
+            <use href="./image/social-defs.svg#icon-close"></use>
+        </svg></button>
+
+        <div class="mobile-burger">
+        <ul class="burger-link-list">
+               <li> <a class="burger-link current" href="./index.html">Studio</a></li>
+                <li> <a class="burger-link" href="./portfolio.html">Portfolio</a></li>
+                <li><a class="burger-link" href="">Contacts</a></li>
             </ul>
-        </address>
+<div class="contact-div">
+            <ul class="contact-list">
+            <li><a class="contact" href=”mailto:info@devstudio.com”>info@devstudio.com</a></li>
+            <li><a  class="contact" href=”tel:+110001111111”>+11 (000) 111-11-11</a></li>
+        </ul>
+    
     </div>
-</header>
+
+ <ul class="soc-list-mob">
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-instagram-2"></use>
+                                </svg></a></li>
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-twitter-1"></use>
+                                </svg></a></li>
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-facebook-1"></use>
+                                </svg></a></li>
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-linkedin-1"></use>
+                                </svg></a></li>
+                    </ul>
+          </div> </div>
+     
+    </header>
+
     
     <main>
         <!--Section Portfolio-->
@@ -401,7 +441,7 @@
 </div>
 <div>
     <form>
-        <p class="sub-footer">Subscribe</p>
+        <span class="sub-footer">Subscribe</span>
     <label class="subs">
             <input class='f-mail' type="email" name="email-footer" placeholder="Email">
             <button type="submit" class="submit-footer"> Subscribe <svg class="icon-svg" width="24" height="20">
@@ -414,6 +454,6 @@
 
 </footer>
    
-    
+     <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
