@@ -1,0 +1,293 @@
+
+/*Основні*/
+:root{
+    --bgrd:#2E2F42;
+    --active-color:#404BBF; 
+    --iris:#4D5AE5;
+    --cloud:#F4F4FD;
+    --slate:#434455;
+    --ocean:#404BBF;
+    --cornflower:#E7E9FC;
+    --main: #FFFFFF;
+--light-state:#8E8F99;
+--green:#31D0AA;
+--modal: #fcfcfc; 
+--lightslate:#8E8F99; 
+}
+
+        /*=========Adaptation===========*/
+ 
+
+        /* Cховати*/
+.visually-hidden {
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            margin: -1px;
+        }
+    
+/* Cховати перелік*/
+.hidden-dot {
+ list-style-type: none; gap: 24px;}
+
+    @media screen and (min-width:1200px) {
+
+ /*=================Контейнер============*/
+ .container {
+                    width: 1158px;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                }
+
+ .section{width: 1128px;}
+
+ /*=========Header========*/
+
+ .container-header { display: flex;
+width: 1158px;
+margin: 0 auto;
+padding: 0 15px;}     
+
+.header-contacts {display: flex; margin-left: 175px; padding-right: 56px;}
+
+.nav-link-list {display: flex;
+            padding: 0;
+            margin: 0;
+        list-style-type: none;
+            gap: 40px;
+            transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+.contacts-list {display: flex;
+            list-style-type: none;
+                gap: 24px;
+                margin-top: 0;
+                    margin-bottom: 0;}
+
+    .contacts{text-decoration: none;
+        color: var(--slate);
+        font-weight: 400;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            display: block;
+         }
+
+        /*=========Hero==========*/
+
+        
+
+        .bgrd {
+    width: 1440px;
+    background-color: var(--bgrd); 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/people-office.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; 
+    padding: 188px 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;}
+
+    .main-title
+{ font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    display: flex;
+color: var(--main); 
+width: 494px;
+margin:0;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 48px;}
+        
+  
+/*=======Section 1=========*/
+
+   .icon-list-svg {width: 100%;
+height: 100%;
+border-radius: 50%; 
+display: block;
+background-color: var(--iris);
+display: flex;
+justify-content: center;
+align-items: center;}
+.icon-list-sec {background-color: var(--cloud);
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+    .flexbox {padding: 120px 0;
+margin: 0;}
+    .flex {display: flex;
+   flex-wrap: nowrap;
+    gap: 24px;
+padding: 0;
+margin: 0;
+margin-bottom: 72px;
+}
+
+    .header-theme {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+color: var(--bgrd);
+margin: 0;
+padding: 0;
+margin-bottom: 8px;
+margin-top: 8px;
+
+}
+
+    .mobile-menu-open {display:none;}
+
+/*=======Section 2=========*/
+
+/*=======Section 3=========*/
+.flexcard {display: flex;
+    gap: 24px;
+    padding: 0;
+margin: 0;}
+
+/*=======Section 4=========*/
+
+.customers {padding-top: 120px; padding-bottom: 120px;}
+
+.cus-ul {display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+  
+}
+
+.cus-link { width: 168px;
+height: 88px;
+border: 1px solid var(--light-state);
+    border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*========Footer=========*/
+
+.footer-style {
+width:1440px; margin-left: auto;margin-right: auto; background-color: var(--bgrd); padding: 100px 0;}
+
+.subs {display:flex;
+ flex-direction: row;
+    margin:0;
+    padding: 0%;
+    margin-top: 16px;
+gap: 16px;font-family:roboto,sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;}
+
+.sub-footer {
+    margin: 0;
+    color:var(--main);
+font-family: roboto,sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;}
+
+ .soc-media {color: var(--main);margin: 0;
+        padding: 0; margin-bottom: 16px;
+        font-family: roboto, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;}
+
+.footer-div {display: flex; 
+    flex-direction: row;
+            
+    }
+    .footer-title {
+    font-family:Raleway,sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--cloud);
+        text-decoration: none;
+        margin-bottom: 16px;}
+
+    .footer-dv {display: flex;
+        flex-direction: column;
+        margin: 0;
+margin-right: 120px;}
+
+     .second-div {margin: 0; padding: 0; margin-right: auto;}
+
+/*======Portfolio======*/
+
+
+
+/*=====Portfolio buttons==========*/
+
+/*======Portfolio cards======*/
+.flex-but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    margin-bottom: 72px;
+}
+
+.porfolio-flex {display:flex; flex-wrap:wrap; gap: 48px 24px; width:calc((1128px-2*20)/3);}
+
+.mobile-menu {display: none;}
+  }
+
+
+
+
+/*=========2x==========*/
+
+    @media screen and (min-device-pixel-ratio:2) and (min-width:1200px),
+     screen and (min-resolution:192dpi) and (min-width:1200px), screen and (min-resolution:2ddpx) and (min-width:1200px) {
+
+        /*=========Hero==========*/
+
+        .bgrd {
+    width: 1440px;
+    background-color: var(--bgrd); 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; 
+    padding: 188px 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;}}

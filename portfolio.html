@@ -8,7 +8,10 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-      <link rel="stylesheet" href="./css/style.css" />
+     <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/mobile.css">
+<link rel="stylesheet" href="./css/tablet.css">
+<link rel="stylesheet" href="./css/desktop.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +33,12 @@
                 <li><a class="nav-link" href="">Contacts</a></li>
             </ul>
         </nav>
+<button type="button" class="mobile-menu-open"><svg class="mobile-menu-open-button" width="30" height="18.6">
+                <use href="./image/social-defs.svg#icon-charm_menu-hamburger">
+                </use>
+            </svg>
 
+            </button>
         <address class="address">
             <ul class="contacts-list">
                 <li><a class="contacts" href=”mailto:info@devstudio.com”>info@devstudio.com</a></li>
@@ -45,7 +53,7 @@
  <section class="porf-pad">
 <div class="container">
     <h1 class="visually-hidden">Portfolio</h1>
-    <div class="flex portfolio-buttons">
+    <div class="flex-but portfolio-buttons">
         <button class="portfolio-button" type="button"> All</button>
         <button class="portfolio-button" type="button">Website</button>
         <button class="portfolio-button" type="button">App</button>
@@ -56,7 +64,33 @@
     <ul class="hidden-porf porfolio-flex">
         <li  class="portfolio-card">
             <a class="card">
-                <div class="cover-div"><img class="img" alt="banking" src="./image/img-5-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                <div class="cover-div">
+
+ <picture>
+ <source
+  media="(min-width:1200px)"
+  srcset="./image/Portfolio/desktop/img-48.png 1x, 
+./image/Portfolio/desktop/img-49.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img.png 1x, 
+./image/Portfolio/tablet/img@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-12.png 1x,
+   ./image/Portfolio/Mobile/img-13.png 2x
+  "
+  src=".image/Portfolio/Mobile/img-12.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+                    <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                     Fruit Ecommerce App ·
                     Cloud Storage App</p></div>
                 
@@ -64,7 +98,33 @@
             <p class="card-content">App</p> </div></a>
         </li>
         <li  class="portfolio-card">
-         <a class="card"><div class="cover-div"> <img class="img" alt="cashless" src="./image/img-6-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+         <a class="card"><div class="cover-div"> 
+            <picture>
+ <source
+  media="(min-width:1200px)"
+  srcset=" ./image/Portfolio/desktop/img.png 1x, 
+./image/Portfolio/desktop/img@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img2.png 1x, 
+./image/Portfolio/tablet/img2@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-10.png  1x,
+   ./image/Portfolio/Mobile/img-11 png 2x
+  "
+  src=".image/Portfolio/Mobile/img-10.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+
+<p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App</p>
         </div>
@@ -72,22 +132,106 @@
             <p class="card-content">Marketing</p> </div></a>
         </li>
         <li class="portfolio-card"> 
-        <a class="card"><div class="cover-div"><img class="img" alt="meditation" src="./image/img-7-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+        <a class="card"><div class="cover-div">
+            
+<picture>
+ <source
+  media="(min-width:1200px)"
+  srcset=" ./image/Portfolio/desktop/img2.png 1x, 
+./image/Portfolio/desktop/img2@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img3.png 1x, 
+./image/Portfolio/tablet/img3@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-14.png  1x,
+   ./image/Portfolio/Mobile/img-15 png 2x
+  "
+  src=".image/Portfolio/Mobile/img-14.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+
+            <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App</p> </div>
         <div class="porf-div">   <h2 class="card-title">Meditation App</h2>
             <p class="card-content">App</p> </div></a>
         </li>
+
         <li class="portfolio-card">
-        <a class="card"> <div class="cover-div"> <img class="img" alt="taxi" src="./image/img-8-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+        <a class="card"> <div class="cover-div"> 
+        <picture>
+ <source
+  media="(min-width:1200px)"
+  srcset=" ./image/Portfolio/desktop/img3.png 1x, 
+./image/Portfolio/desktop/img3@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img4.png 1x, 
+./image/Portfolio/tablet/img4@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-16.png  1x,
+   ./image/Portfolio/Mobile/img-17.png 2x
+  "
+  src=".image/Portfolio/Mobile/img-16.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+
+
+            <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App</p>
         </div>
         <div class="porf-div"> <h2 class="card-title">Taxi Service</h2>
             <p class="card-content">Marketing</p> </div></a>
         </li>
+
         <li class="portfolio-card">
-        <a class="card"> <div class="cover-div"><img class="img" alt="screen" src="./image/img-12-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+        <a class="card"> <div class="cover-div">
+
+ <picture>
+ <source
+  media="(min-width:1200px)"
+  srcset=" ./image/Portfolio/desktop/img4.png 1x, 
+./image/Portfolio/desktop/img4@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img5.png 1x, 
+./image/Portfolio/tablet/img5@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-18.png  1x,
+   ./image/Portfolio/Mobile/img-19.png 2x
+  "
+  src=".image/Portfolio/Mobile/img-18.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+
+            
+            <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App</p>
         </div>
@@ -95,21 +239,97 @@
             <p class="card-content">Design</p> </div></a>
         </li>
         <li class="portfolio-card">
-            <a class="card"><div class="cover-div"><img class="img"alt="online" src="./image/img-9-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+            <a class="card"><div class="cover-div">
+     <picture>
+ <source
+  media="(min-width:1200px)"
+  srcset="./image/Portfolio/desktop/img5.png 1x, 
+./image/Portfolio/desktop/img5@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img6.png 1x, 
+./image/Portfolio/tablet/img6@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-20.png  1x,
+   ./image/Portfolio/Mobile/img-21.png 2x
+  "
+  src=".image/Portfolio/Mobile/img-20.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+
+
+                <p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                 Fruit Ecommerce App ·
                 Cloud Storage App</p></div>
         <div class="porf-div"> <h2 class="card-title">Online Courses</h2>
             <p class="card-content">Marketing</p> </div></a>
         </li>
         <li class="portfolio-card">
-        <a class="card"><div class="cover-div"> <img class="img" alt="instagram" src="./image/img-10-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+        <a class="card"><div class="cover-div"> <picture>
+ <source
+  media="(min-width:1200px)"
+  srcset="./image/Portfolio/desktop/img6.png 1x, 
+./image/Portfolio/desktop/img6@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img7.png 1x, 
+./image/Portfolio/tablet/img7@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-22.png  1x,
+   ./image/Portfolio/Mobile/img-23.png 2x
+  "
+  src=".image/Portfolio/Mobile/img-22.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+
+<p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App</p></div>
    <div class="porf-div">  <h2 class="card-title">Instagram Stories Concept</h2>
       <p class="card-content">Design</p></div></a>
         </li>
         <li class="portfolio-card">
-        <a class="card"> <div class="cover-div"><img class="img" alt="organic" src="./image/img-13-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+        <a class="card"> <div class="cover-div"><picture>
+ <source
+  media="(min-width:1200px)"
+  srcset="./image/Portfolio/desktop/img8.png 1x, 
+./image/Portfolio/desktop/img8@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img8.png 1x, 
+./image/Portfolio/tablet/img8@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-24.png  1x,
+   ./image/Portfolio/Mobile/img-25.png 2x
+  "
+  src=".image/Portfolio/Mobile/img-24.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+<p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App</p>
         </div>
@@ -117,7 +337,33 @@
             <p class="card-content">Web Site</p></div></a>
         </li>
         <li class="portfolio-card">
-        <a class="card"> <div class="cover-div"><img class="img" alt="fresh" src="./image/img-11-2.jpg"><p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+        <a class="card"> <div class="cover-div">
+            <picture>
+ <source
+  media="(min-width:1200px)"
+  srcset="./image/Portfolio/desktop/img7.png 1x, 
+./image/Portfolio/desktop/img7@2x.png 2x"
+ />
+ <source
+  media="(min-width:768px)"
+  srcset="
+ ./image/Portfolio/tablet/img9.png 1x, 
+./image/Portfolio/tablet/img9@2x.png 2x
+  "
+ />
+ <img
+  srcset="
+   ./image/Portfolio/Mobile/img-26.png  1x,
+   ./image/Portfolio/Mobile/img-27.png 2x
+  "
+  src=".image/Portfolio/Mobile/img-26.png"
+  width=“280”
+  alt="image"
+  loading="lazy"
+ />
+</picture>
+
+<p class="cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
             Fruit Ecommerce App ·
             Cloud Storage App</p>
         </div>
@@ -155,7 +401,7 @@
 </div>
 <div>
     <form>
-        <span class="sub-footer">Subscribe</span>
+        <p class="sub-footer">Subscribe</p>
     <label class="subs">
             <input class='f-mail' type="email" name="email-footer" placeholder="Email">
             <button type="submit" class="submit-footer"> Subscribe <svg class="icon-svg" width="24" height="20">

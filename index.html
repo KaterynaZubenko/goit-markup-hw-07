@@ -9,6 +9,9 @@
         rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/mobile.css">
+<link rel="stylesheet" href="./css/tablet.css">
+<link rel="stylesheet" href="./css/desktop.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +34,13 @@
                 <li><a class="nav-link" href="">Contacts</a></li>
             </ul>
             </nav>
+
+
+            <button type="button" class="mobile-menu-open" js-open-menu><svg class="mobile-menu-open-button" width="30" height="18.6">
+                <use href="./image/social-defs.svg#icon-charm_menu-hamburger">
+                </use>
+            </svg>
+             </button>
         
         <address class="address">
             <ul class="contacts-list">
@@ -38,7 +48,46 @@
             <li><a  class="contacts" href=”tel:+110001111111”>+11 (000) 111-11-11</a></li>
         </ul>
         </address> </div>
+
+      <div class="mobile-menu">
+        <button class="mobile-menu_close-bg" class="js-close-menu"><svg class="icon-close" width="8" height="8">
+            <use href="./image/social-defs.svg#icon-close"></use>
+        </svg></button>
+
+        <div class="mobile-burger">
+        <ul class="burger-link-list">
+               <li> <a class="burger-link current" href="./index.html">Studio</a></li>
+                <li> <a class="burger-link" href="./portfolio.html">Portfolio</a></li>
+                <li><a class="burger-link" href="">Contacts</a></li>
+            </ul>
+<div class="contact-div">
+            <ul class="contact-list">
+            <li><a class="contact" href=”mailto:info@devstudio.com”>info@devstudio.com</a></li>
+            <li><a  class="contact" href=”tel:+110001111111”>+11 (000) 111-11-11</a></li>
+        </ul>
+    
+    </div>
+
+ <ul class="soc-list-mob">
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-instagram-2"></use>
+                                </svg></a></li>
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-twitter-1"></use>
+                                </svg></a></li>
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-facebook-1"></use>
+                                </svg></a></li>
+                        <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
+                                    <use href="./image/social-defs.svg#icon-linkedin-1"></use>
+                                </svg></a></li>
+                    </ul>
+          </div> </div>
+     
     </header>
+
+
+
     
     
     <main>
@@ -93,10 +142,25 @@
             <div class="container">
             <h2 class="doing-head">What are we doing</h2>
            <ul class="style-sec"> 
-            <li class="doing-card"><img class="fleximg" src="./image/Rectangle71.jpg" alt="комп'ютер"></li>
-           <li class="doing-card"> <img class="fleximg" src="./image/Rectangle712.jpg" alt="Whatsapp"> </li>
-           <li class="doing-card"><img class="fleximg" src="./image/Rectangle713.jpg"
-                alt="телефон"></li></ul>
+            <li class="doing-card">
+                <img 
+                srcset="./image/Rectangle71.jpg 1x, ./image/Rectangle2x/Rectangle 71-4.png 2x"
+                class="fleximg" 
+                src="./image/Rectangle71.jpg" 
+                alt="комп'ютер"></li>
+           <li class="doing-card"> 
+            <img 
+            srcset="./image/Rectangle712.jpg 1x, ./image/Rectangle2x/Rectangle 71-5.png 2x"
+            class="fleximg" 
+            src="./image/Rectangle712.jpg" 
+            alt="Whatsapp"> </li>
+           <li class="doing-card">
+            <img 
+            srcset="./image/Rectangle713.jpg 1x, ./image/Rectangle2x/Rectangle 71-6.png 2x"
+            class="fleximg" 
+            src="./image/Rectangle713.jpg"
+                alt="телефон">
+            </li></ul>
               </div>>
         </section>
         <!--Section 4-->
@@ -106,7 +170,11 @@
                 <ul class="flexcard">
                  
            <li class="card-theme"> 
-             <img class="fleximg" src="./image/img.jpg" alt="Mark">
+             <img 
+             srcset="./image/img.jpg 1x, ./image/Team2x/img.png"
+             class="fleximg" 
+             src="./image/img.jpg" 
+             alt="Mark">
                   <div class="card-div"><h2 class="theme-name">Mark Guerrero</h2>
                  <p class="doing-content">Product Designer</p>
                 <ul class="soc-list">
@@ -117,7 +185,11 @@
                 </ul></div></li>
                 
                
-                    <li class="card-theme"> <img src="./image/img2.jpg" alt="Tom" >
+                    <li class="card-theme"> 
+                        <img 
+                        srcset="./image/img2.jpg 1x, ./image/Team2x/img-7.png 2x"
+                        src="./image/img2.jpg" 
+                        alt="Tom">
                     <div class="card-div"><h2 class="theme-name">Tom Ford</h2>
                      <p class="doing-content">Frontend Developer</p>
                      <ul class="soc-list">
@@ -135,7 +207,12 @@
                                 </svg></a></li>
                     </ul></div></li>
             
-                    <li class="card-theme"> <img class="fleximg" src="./image/img3.jpg" alt="Camila">
+                    <li class="card-theme"> 
+                        <img 
+                        srcset="./image/img3.jpg 1x, ./image/Team2x/img-8.png 2x"
+                        class="fleximg" 
+                        src="./image/img3.jpg" 
+                        alt="Camila">
                     <div class="card-div"> <h2 class="theme-name">Camila Garcia</h2>
                      <p class="doing-content">Marketing</p><ul class="soc-list">
                         <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
@@ -153,7 +230,13 @@
                     </ul></div> </li>
 
       
-                    <li class="card-theme"> <img class="fleximg" src="./image/img4.jpg" alt="Daniel">
+                    <li class="card-theme"> 
+                        
+                        <img 
+                        srcset="./image/img4.jpg 1x, ./image/Team2x/img-9.png 2x"
+                        class="fleximg" 
+                        src="./image/img4.jpg" 
+                        alt="Daniel">
                    <div class="card-div"> <h2 class="theme-name">Daniel Wilson</h2>
                     <p class="doing-content">UI Designer</p><ul class="soc-list">
                         <li class="soc-item"><a class="card-link"><svg class="icon-svg" width="16" height="16">
@@ -233,7 +316,7 @@
 </div>
 <div>
     <form>
-        <span class="sub-footer">Subscribe</span>
+        <p class="sub-footer">Subscribe</p>
     <div class="subs">
             <input class='f-mail' type="email" name="email-footer" placeholder="Email">
             <button type="submit" class="submit-footer"> Subscribe <svg class="icon-svg" width="24" height="20">
@@ -287,6 +370,7 @@
 </form>
  
     </div> </div>
+    <script scr="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 
