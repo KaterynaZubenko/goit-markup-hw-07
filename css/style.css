@@ -39,7 +39,7 @@
 
  /*Контейнер*/
  .container-header {display: flex;
-    width: 396px;
+
     margin: 0px;
     padding: 24px 15px;
     justify-content: center;
@@ -153,7 +153,7 @@ margin: 0;}
 margin-bottom: 72px;}
 
 .team-theme {
-    background-color: var(--cloud);
+    background-color: var(--cloud); min-width: 320px;
 
 }
 
@@ -355,7 +355,7 @@ width:100%; margin-left: auto;margin-right: auto; background-color: var(--bgrd);
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.02em;}
-.cus-div {width: 1140px;
+.cus-div {max-width: 1140px;
     margin: 0;
 padding: 0;
 padding-top: 130px;
@@ -436,7 +436,7 @@ border: 1px solid var(--ocean);
 .img {display: block;max-width: 100%; height: auto;}
 .fleximg {display: block;}
 
-.customers {padding-top: 120px;}
+.customers {padding: 96px 0;}
 
 
 .button-style:focus,
@@ -652,7 +652,7 @@ letter-spacing: 0.02em;}
 border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 4px;
 height: 40px;
-width: 264px;
+width: 90%;
 padding: 8px 0px 8px 16px;
 color: var(--main);}
 
@@ -880,7 +880,7 @@ align-items: center;}
 /*=======Section 3=========*/
 
 .flexcard {display: flex;
-    gap: 24px;
+    gap: 72px;
     padding: 0;
 margin: 0;}
 
@@ -893,7 +893,6 @@ margin: 0;}
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 96px;
     gap: 24px;
   
 }
@@ -923,7 +922,7 @@ transition-property: transform;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 

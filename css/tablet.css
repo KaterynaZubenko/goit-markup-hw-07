@@ -137,6 +137,11 @@ margin-bottom: 48px;
     margin-bottom: 48px;
    width: calc((768-1*24)/2);
 }
+
+.flexbox {padding: 96px 0;
+margin: 0;}
+
+    
   
 .icon-list-sec {
     display: none;}
@@ -153,11 +158,22 @@ margin-bottom: 48px;
 
 .flexcard {
     display: flex;
-    gap: 24px;
+    gap: 64px;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.theme-content {
+    max-width:356px;
+    font-family: roboto, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    margin: 0;
+    padding: 0;
 }
 
 /*=======Section 4=========*/
@@ -168,10 +184,10 @@ margin-bottom: 48px;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 96px;
     gap: 24px;
   
 }
+.customers {padding: 96px 0;}
 
 .cus-link { width: 168px;
 height: 88px;
@@ -186,6 +202,8 @@ transition-property: transform;
         margin-bottom: 72px;
 }
 
+
+
 /*========Footer=========*/
 .footer-style {
 width: 768px; margin-left: auto;margin-right: auto; background-color: var(--bgrd); padding: 96px 108px;}
@@ -199,7 +217,13 @@ width: 768px; margin-left: auto;margin-right: auto; background-color: var(--bgrd
 
 .footer-div {display: flex; 
     flex-wrap: wrap;}
-
+.f-mail {background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+height: 40px;
+width: 264px;
+padding: 8px 0px 8px 16px;
+color: var(--main);}
 
 
 /*======Portfolio======*/
